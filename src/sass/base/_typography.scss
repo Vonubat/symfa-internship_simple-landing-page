@@ -1,0 +1,55 @@
+.link {
+  color: white;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.047rem;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.link--active {
+  font-weight: 700;
+}
+
+.link__city,
+.button--mint,
+.heading__city-date {
+  text-transform: uppercase;
+}
+
+.button--white {
+  color: $color-primary;
+}
+
+.button--mint {
+  color: white;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 124.41%;
+}
+
+.header__description {
+  color: white;
+}
+
+.heading__city-date {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 124.41%;
+  letter-spacing: 0.05em;
+}
+
+.h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 124.41%;
+}
+
+.heading__workshops {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 124.41%;
+}

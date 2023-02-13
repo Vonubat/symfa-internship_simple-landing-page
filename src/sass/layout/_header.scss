@@ -1,0 +1,36 @@
+.header {
+  height: 718px;
+  background-color: rgba($color-primary, 0.1);
+}
+
+.header__container {
+  display: flex;
+  flex-direction: column;
+  height: 675px;
+  background-image: url($bg-header-xl);
+  background-repeat: no-repeat;
+}
+
+.header__navigation {
+  justify-content: center;
+  height: 42px;
+  margin: 0 10px;
+}
+
+.header__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  align-self: end;
+  width: 552px;
+  height: 337px;
+  margin-top: 88px;
+  margin-right: 155px;
+}
+
+.heading__city-date,
+.h1,
+.heading__workshops {
+  margin: 0;
+}
