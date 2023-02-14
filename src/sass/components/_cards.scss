@@ -7,24 +7,24 @@
   height: 221px;
   box-shadow: 0 20px 40px rgba($color-primary, 0.1);
 
-  .card__statistics--heading {
+  .statistics__title {
     margin: 0;
     margin-top: 34px;
     padding: 0 50px;
   }
 
-  .card__statistics--text {
+  .statistics__text {
     margin-top: 13.5px;
   }
 
   &:nth-child(odd) {
-    .card__statistics--text {
+    .statistics__text {
       padding: 0 50px;
     }
   }
 
   &:nth-child(even) {
-    .card__statistics--text {
+    .statistics__text {
       padding: 0 30px 0 50px;
     }
   }
@@ -37,7 +37,7 @@
     margin: 0;
   }
 
-  .card__targets--text {
+  .targets__text {
     margin-top: 13.5px;
   }
 }
@@ -49,7 +49,7 @@
     margin: 0;
   }
 
-  .card__schedule--text {
+  .schedule__text {
     margin-top: 10px;
   }
 }
@@ -64,7 +64,7 @@
     margin: 0;
   }
 
-  .card__schedule--text {
+  .schedule__text {
     margin-top: 10px;
   }
 }

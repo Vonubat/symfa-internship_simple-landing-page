@@ -17,6 +17,7 @@
   width: 506px;
   height: 187px;
   margin-top: 145px;
+  white-space: pre-wrap; // Can't get the same structure like in mockup
 
   &::before {
     content: "Если вы не делаете \a Customer Development —\a вы не управляете\a движением\a к product-market fit";

@@ -17,7 +17,7 @@
 .link__city,
 .button--mint,
 .heading__city-date,
-.card__schedule--heading,
+.schedule__title,
 .link-full-program {
   text-transform: uppercase;
 }
@@ -94,28 +94,35 @@
   color: $color-primary;
 }
 
+.content__heading--white {
+  color: white;
+}
+
+.content__heading--black {
+  color: black;
+}
+
 .content__heading {
   font-weight: 700;
   font-size: 1.875rem;
   line-height: 124.41%;
-  white-space: pre-wrap;
 }
 
-.card__statistics--heading {
+.statistics__title {
   color: $color-primary;
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 143.55%;
 }
 
-.card__statistics--text {
+.statistics__text {
   color: $color-card-text;
   font-size: 0.875rem;
   line-height: 143.55%;
 }
 
-.card__targets--heading,
-.card__schedule--heading {
+.targets__title,
+.schedule__title {
   color: $color-primary;
   font-weight: 600;
   font-size: 0.875rem;
@@ -123,15 +130,15 @@
   letter-spacing: 0.05em;
 }
 
-.card__targets--text,
-.card__schedule--text {
+.targets__text,
+.schedule__text {
   color: $color-card-text;
   font-size: 0.875rem;
   line-height: 143.55%;
 }
 
 .card__schedule--solid {
-  .card__schedule--text {
+  .schedule__text {
     font-weight: 600;
   }
 }
