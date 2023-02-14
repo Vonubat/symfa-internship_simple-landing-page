@@ -7,48 +7,25 @@
   height: 221px;
   box-shadow: 0 20px 40px rgba($color-primary, 0.1);
 
-  & > * {
-    margin: 0;
-    padding-left: 53px;
-  }
-
   .card__statistics--heading {
+    margin: 0;
     margin-top: 34px;
+    padding: 0 50px;
   }
 
   .card__statistics--text {
     margin-top: 13.5px;
   }
 
-  &:nth-child(1) {
+  &:nth-child(odd) {
     .card__statistics--text {
-      &::before {
-        content: "стартапов умирают \a в течение 3 лет, и главная\a причина этого — отсутствие\a product-market fit";
-      }
+      padding: 0 50px;
     }
   }
 
-  &:nth-child(2) {
+  &:nth-child(even) {
     .card__statistics--text {
-      &::before {
-        content: "компаний по результатам исследования SaaS проводят многовариантные A / B тестирования";
-      }
-    }
-  }
-
-  &:nth-child(3) {
-    .card__statistics--text {
-      &::before {
-        content: "тестируемых Amazon\a функций реально\a запускаются после\a проверки гипотез";
-      }
-    }
-  }
-
-  &:nth-child(4) {
-    .card__statistics--text {
-      &::before {
-        content: "новых продуктов не получают\a значительного признания нa\a рынке, так как строятся на\a основе творчества, интуиции\a и интеллекта";
-      }
+      padding: 0 30px 0 50px;
     }
   }
 }

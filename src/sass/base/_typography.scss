@@ -98,16 +98,11 @@
   color: $color-primary;
 }
 
-.content__heading,
-.card__statistics--heading,
-.card__statistics--text {
-  white-space: pre-wrap;
-}
-
 .content__heading {
   font-weight: 700;
   font-size: 1.875rem;
   line-height: 124.41%;
+  white-space: pre-wrap;
 }
 
 .card__statistics--heading {
