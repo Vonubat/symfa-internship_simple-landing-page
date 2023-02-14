@@ -1,0 +1,33 @@
+.statistics {
+  min-height: 712.5px;
+  background-color: white;
+
+  @include center-inside-elem-flex;
+}
+
+.statistics__content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  min-height: 526px;
+}
+
+.statistics__heading {
+  width: 506px;
+  height: 187px;
+  margin-top: 145px;
+
+  &::before {
+    content: "Если вы не делаете \a Customer Development —\a вы не управляете\a движением\a к product-market fit";
+  }
+}
+
+.statistics__cards-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-between;
+  row-gap: 61px;
+  width: 659px;
+  height: 526px;
+}
