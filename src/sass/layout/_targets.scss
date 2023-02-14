@@ -1,0 +1,25 @@
+.targets {
+  min-height: 564.5px;
+  background-color: rgba($color-primary, 0.05);
+}
+
+.targets__content {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.targets__heading {
+  width: 820px;
+  height: 38px;
+  margin-top: 124.5px;
+}
+
+.targets__cards-wrapper {
+  display: flex;
+  flex-direction: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1020px;
+  margin-top: 60px;
+}
