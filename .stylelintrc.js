@@ -14,5 +14,6 @@ module.exports = {
         },
       },
     ],
+    'max-line-length': [null],
   },
 };
