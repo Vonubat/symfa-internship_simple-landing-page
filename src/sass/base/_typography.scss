@@ -17,7 +17,8 @@
 .link__city,
 .button--mint,
 .heading__city-date,
-.link__full-program {
+.card__schedule--heading,
+.link-full-program {
   text-transform: uppercase;
 }
 
@@ -129,17 +130,13 @@
   line-height: 143.55%;
 }
 
-.card__schedule--heading {
-  text-transform: uppercase;
-}
-
 .card__schedule--solid {
   .card__schedule--text {
     font-weight: 600;
   }
 }
 
-.link__full-program {
+.link-full-program {
   color: $color-primary;
   font-weight: 600;
   font-size: 0.875rem;
