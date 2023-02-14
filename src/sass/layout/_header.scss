@@ -24,13 +24,19 @@
   align-items: start;
   align-self: end;
   width: 552px;
-  height: 337px;
+  min-height: 337px;
   margin-top: 88px;
   margin-right: 155px;
 }
 
 .heading__city-date,
 .h1,
-.heading__workshops {
+.heading__workshops,
+.header-ellipse__text--mark {
   margin: 0;
+}
+
+.header-ellipse {
+  margin-left: calc(100vw / 8.62);
+  transform: translateY(13%);
 }

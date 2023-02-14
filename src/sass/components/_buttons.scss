@@ -1,9 +1,7 @@
 .button,
 .button__bg-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include center-inside-elem-flex;
+
   border-radius: 50px;
   cursor: pointer;
 }

@@ -53,3 +53,47 @@
   font-size: 1.125rem;
   line-height: 124.41%;
 }
+
+.header-ellipse {
+  color: $color-primary;
+}
+
+.header-ellipse__text--subject,
+.header-ellipse__text--person,
+.header-ellipse__text--review {
+  font-weight: 400;
+}
+
+.header-ellipse__text--mark,
+.header-ellipse__text--company {
+  font-weight: 700;
+}
+
+.header-ellipse__text--subject {
+  font-size: 0.875rem;
+  line-height: 153.12%;
+}
+
+.header-ellipse__text--mark {
+  font-size: 2.125rem;
+  line-height: 153.12%;
+}
+
+.header-ellipse__text--person {
+  font-size: 0.875rem;
+  line-height: 143.55%;
+}
+
+.header-ellipse__text--company {
+  font-size: 0.875rem;
+  line-height: 143.55%;
+}
+
+.header-ellipse__text--review {
+  font-size: 0.625rem;
+  line-height: 200%;
+}
+
+.link-review {
+  color: $color-primary;
+}
