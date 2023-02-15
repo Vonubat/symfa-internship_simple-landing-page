@@ -1,0 +1,33 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1319px;
+  min-height: 895px;
+  margin-left: 74.5px;
+  background-image: url($bg-reviews-xl);
+  background-repeat: no-repeat;
+}
+
+.reviews__heading {
+  width: 371px;
+  height: 25px;
+  margin-top: 70px;
+  margin-left: 60px;
+}
+
+.reviews__cards-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 60px;
+  align-content: flex-start;
+  width: 100%;
+  max-height: 698px;
+  margin-top: 77px;
+  margin-left: 60px;
+}
