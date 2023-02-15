@@ -1,0 +1,21 @@
+.price {
+  min-height: 597px;
+}
+
+.price__content {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.price__heading {
+  margin-top: 104px;
+}
+
+.price__cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 42px;
+  justify-content: center;
+  margin-top: 57px;
+}

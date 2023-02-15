@@ -174,3 +174,46 @@
     }
   }
 }
+
+.card__price {
+  box-shadow: 0 20px 50px rgba($color-primary, 0.12);
+
+  &:nth-child(-n + 3) {
+    width: 271px;
+    height: 293px;
+
+    .price__text {
+      margin-top: 12px;
+    }
+
+    .button--mint {
+      margin-top: 33px;
+    }
+
+    @include center-inside-elem-flex;
+  }
+
+  &:nth-child(3) {
+    position: relative;
+
+    .badge__sale {
+      top: -45px;
+      right: -25px;
+    }
+  }
+
+  &:nth-child(4) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 570px;
+    height: 160px;
+    text-align: center;
+
+    .price__text {
+      margin-top: 12px;
+    }
+  }
+}

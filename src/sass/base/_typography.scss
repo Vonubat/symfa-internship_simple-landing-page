@@ -233,3 +233,25 @@
   font-size: 0.625rem;
   line-height: 200%;
 }
+
+.price__title {
+  color: $color-primary;
+  font-weight: 700;
+  font-size: 1.563rem;
+  line-height: 2.5rem;
+}
+
+.price__text {
+  color: $color-primary;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 158.47%;
+}
+
+.badge__sale {
+  color: white;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 124.41%;
+  text-transform: uppercase;
+}

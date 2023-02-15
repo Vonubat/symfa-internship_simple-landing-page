@@ -6,3 +6,13 @@
   @include badge-gradient;
   @include center-inside-elem-flex;
 }
+
+.badge__sale {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background-color: $color-primary;
+  border-radius: 300px;
+
+  @include center-inside-elem-flex;
+}
