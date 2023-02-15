@@ -1,4 +1,4 @@
-@mixin ellipse-gradient() {
+@mixin badge-gradient() {
   background: radial-gradient(68.31% 68.31% at 50% 50%, #f9fbff 0%, #cadef9 100%);
   box-shadow: 0 10px 50px rgb(119 157 255 / 30%);
 }
