@@ -1,0 +1,19 @@
+.gallery {
+  min-height: 656px;
+}
+
+.gallery__content {
+  @include center-inside-elem-flex;
+}
+
+.gallery__heading {
+  width: 539px;
+}
+
+.gallery__img-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 74px;
+  row-gap: 23px;
+}
