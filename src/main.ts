@@ -1,2 +1,2 @@
-import './styles.scss'; // DO NOT REMOVE!
+import './sass/main.scss';
 /* WRITE YOUR CODE BELOW */
