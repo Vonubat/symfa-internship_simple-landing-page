@@ -86,7 +86,7 @@
   line-height: 200%;
 }
 
-.link__review {
+.link__badge {
   color: $color-primary;
 }
 
@@ -220,4 +220,16 @@
   color: $color-card-text;
   font-size: 1rem;
   line-height: 180%;
+}
+
+.reviews-badge__text--subject {
+  color: $color-primary;
+  font-size: 0.75rem;
+  line-height: 143.55%;
+  text-align: center;
+}
+
+.reviews-badge__text--review {
+  font-size: 0.625rem;
+  line-height: 200%;
 }

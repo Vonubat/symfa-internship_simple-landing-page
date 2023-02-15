@@ -28,3 +28,20 @@
   margin-top: 77px;
   margin-left: 60px;
 }
+
+.reviews-badge {
+  @include center-inside-elem-flex;
+
+  // gap: 17px;
+  transform: translate(985px, -217px);
+
+  .reviews-badge__text--subject {
+    width: 100px;
+    height: 40px;
+    margin-top: 17px;
+  }
+
+  .reviews-badge__review {
+    margin-top: 20px;
+  }
+}
