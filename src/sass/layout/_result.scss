@@ -1,0 +1,37 @@
+.result {
+  min-height: 912px;
+  background-color: rgba($color-primary, 0.05);
+
+  @include center-inside-elem-flex;
+}
+
+.result__content {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 100%;
+  min-height: 772px;
+  background-color: $color-primary;
+}
+
+.result__heading {
+  width: 100%;
+  max-width: 1169px;
+  height: 34px;
+  margin-top: 34px;
+}
+
+.result__cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px;
+  justify-content: center;
+  width: 100%;
+  margin-top: 66px;
+  row-gap: 41px;
+}
+
+.result__icon {
+  width: 60px;
+  height: 60px;
+}
