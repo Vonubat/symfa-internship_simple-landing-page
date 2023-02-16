@@ -4,6 +4,7 @@
 }
 
 .header__container {
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 675px;
@@ -37,8 +38,8 @@
 }
 
 .header-badge {
+  bottom: -12.5%;
   margin-left: calc(100vw / 8.62);
-  transform: translateY(13%);
 }
 
 .header-badge__review {
