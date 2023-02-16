@@ -1,0 +1,29 @@
+.included {
+  min-height: 1228px;
+  margin-top: 82px;
+  background-image: url($bg-included-bottom-xl);
+  background-repeat: no-repeat;
+
+  @include center-inside-elem-flex;
+}
+
+.included__content {
+  display: flex;
+  flex-flow: column wrap;
+  min-height: 1083px;
+  padding-left: 285px;
+  background-image: url($bg-included-upper-xl);
+  background-repeat: no-repeat;
+}
+
+.included__heading {
+  margin-top: 134px;
+}
+
+.included__cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 66px;
+  row-gap: 66px;
+}
