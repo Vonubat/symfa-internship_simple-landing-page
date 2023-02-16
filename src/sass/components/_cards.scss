@@ -81,10 +81,6 @@
   .mentor__video {
     border-radius: 10px;
   }
-
-  .play__icon {
-    @include center-elem-absolute;
-  }
 }
 
 .card__mentor--solid {
@@ -274,10 +270,6 @@
       position: relative;
       width: 295px;
       height: 166px;
-    }
-
-    .play__icon {
-      @include center-elem-absolute;
     }
   }
 
