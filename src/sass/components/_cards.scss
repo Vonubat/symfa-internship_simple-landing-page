@@ -179,11 +179,11 @@
     height: 293px;
 
     .price__text {
-      margin-top: 12px;
+      margin-top: 10px;
     }
 
     .button--mint {
-      margin-top: 33px;
+      margin-top: 37px;
     }
 
     @include center-inside-elem-flex;
@@ -201,7 +201,7 @@
   &:nth-child(4) {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 60px;
     justify-content: center;
     align-items: center;
     width: 570px;
@@ -209,7 +209,7 @@
     text-align: center;
 
     .price__text {
-      margin-top: 12px;
+      margin-top: 5px;
     }
   }
 }
