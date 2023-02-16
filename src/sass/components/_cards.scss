@@ -123,13 +123,13 @@
     position: relative;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 30px 100px rgba($color-card-shadow, 0.1);
+    box-shadow: 0 10px 30px rgba($color-card-shadow, 0.1);
   }
 
   &:nth-child(1) {
     .reviews__review-container {
-      width: 462px;
-      height: 167px;
+      width: 554px;
+      height: 212px;
       padding: 27px 41px 18px 51px;
 
       .reviews__text {
@@ -144,8 +144,8 @@
 
   &:nth-child(2) {
     .reviews__review-container {
-      width: 462px;
-      height: 197px;
+      width: 554px;
+      height: 230px;
       padding: 27px 41px 0 51px;
     }
 
@@ -156,8 +156,8 @@
 
   &:nth-child(3) {
     .reviews__review-container {
-      width: 451px;
-      height: 292px;
+      width: 560px;
+      height: 390px;
       padding: 27px 55px 65px 50px;
 
       .reviews__text {

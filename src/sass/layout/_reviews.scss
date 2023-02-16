@@ -15,9 +15,8 @@
 
 .reviews__heading {
   width: 371px;
-  height: 25px;
-  margin-top: 70px;
-  margin-left: 60px;
+  margin-top: 60px;
+  margin-left: 55px;
 }
 
 .reviews__cards-wrapper {
@@ -25,15 +24,15 @@
   flex-flow: column wrap;
   gap: 60px;
   align-content: flex-start;
-  max-height: 698px;
-  margin-top: 77px;
-  margin-left: 60px;
+  max-height: 710px;
+  margin-top: 60px;
+  margin-left: 55px;
 }
 
 .reviews-badge {
   @include center-inside-elem-flex;
 
-  top: 72.5%;
+  top: 73%;
   right: 11%;
 
   .reviews-badge__text--subject {
