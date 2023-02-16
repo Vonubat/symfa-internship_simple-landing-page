@@ -1,12 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Customer Development</title>
+  </head>
+  <body id="root">
+    <header class="header">
+      <div class="header__container">
+        <nav class="header__navigation navigation">
+          <div class="navigation__cities">
+            <a class="link link__city link--active" href="#">Санкт-петербург</a>
+            <a class="link link__city" href="#">Москва</a>
+            <a class="link link__city" href="#">Минск</a>
+          </div>
+          <div class="navigation__menu">
+            <a class="link link__menu" href="#">Программа</a>
+            <a class="link link__menu" href="#">Отзывы</a>
+            <a class="link link__menu" href="#">Стоимость</a>
+            <a class="link link__menu" href="#">О преподавателе</a>
+          </div>
+          <button class="button button--white">Запись на курс</button>
+        </nav>
+        <article class="header__description">
+          <time class="heading__city-date">Санкт-петербург 10-21 мая</time>
+          <h1 class="h1">
+            Начни делать <br />
+            Customer Development <br />
+            и проверять гипотезы
+          </h1>
+          <h4 class="heading__workshops">На оффлайн курсе из 5 воркшопов</h4>
+          <div class="button__bg-wrapper">
+            <button class="button button--mint">Записаться</button>
+          </div>
+        </article>
+        <div class="header-ellipse ellipse">
+          <span class="header-ellipse__text header-ellipse__text--subject">Оценка</span>
+          <h3 class="header-ellipse__text--mark">9 из 10</h3>
+          <span class="header-ellipse__text--person">Иван Матвиенко</span>
+          <span class="header-ellipse__text--company">Wimprof</span>
+          <a class="link link-review header-ellipse__review" href="#">
+            <span class="header-ellipse__text--review">Читать отзыв →</span>
+          </a>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>

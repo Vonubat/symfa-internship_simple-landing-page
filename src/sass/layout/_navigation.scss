@@ -1,0 +1,23 @@
+.navigation {
+  display: flex;
+  padding-top: 32px;
+  white-space: nowrap;
+}
+
+.navigation__cities {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  width: 317px;
+}
+
+.navigation__menu {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  width: 471px;
+  margin-right: calc(100vw / 21.82);
+  margin-left: calc(100vw / 8.88);
+}

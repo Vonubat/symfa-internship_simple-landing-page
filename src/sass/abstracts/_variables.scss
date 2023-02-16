@@ -1,0 +1,17 @@
+// Colors
+$color-general-bg: #e5e5e5;
+$color-primary: #2f80ed;
+$color-mint: #64e2cd;
+
+// Pathes
+$bg-header-xl: "../assets/background/bg-header-1440.png";
+$bg-header-md: "../assets/background/bg-header-768.png";
+$bg-header-sm: "../assets/background/bg-header-320.png";
+
+// Screen breakpoints
+$screens: (
+  xl: 1440px,
+  lg: 976px,
+  md: 768px,
+  sm: 320px,
+);
