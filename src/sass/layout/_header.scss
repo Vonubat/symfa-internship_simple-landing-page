@@ -16,25 +16,30 @@
   justify-content: center;
   height: 42px;
   margin: 0 10px;
-  padding-top: 32px;
+  margin-top: 32px;
 }
 
 .header__description {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: start;
   align-self: end;
   width: 552px;
   min-height: 337px;
   margin-top: 88px;
   margin-right: 155px;
-}
 
-.heading__city-date,
-.heading__workshops,
-.header-badge__text--mark {
-  margin: 0;
+  h1 {
+    margin-top: 18px;
+  }
+
+  .heading__workshops {
+    margin-top: 21px;
+  }
+
+  .button__bg-wrapper {
+    margin-top: 29px;
+  }
 }
 
 .header-badge {
