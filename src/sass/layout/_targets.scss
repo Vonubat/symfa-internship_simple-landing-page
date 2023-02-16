@@ -6,19 +6,18 @@
 .targets__content {
   display: flex;
   flex-flow: column wrap;
-  align-items: center;
+  max-width: 1020px;
+  margin-left: 240px;
 }
 
 .targets__heading {
+  align-self: center;
   width: 820px;
-  height: 38px;
   margin-top: 124.5px;
 }
 
 .targets__cards-wrapper {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  max-width: 1020px;
   margin-top: 60px;
 }
