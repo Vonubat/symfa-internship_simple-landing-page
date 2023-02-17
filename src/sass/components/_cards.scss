@@ -63,6 +63,10 @@
   .targets__text {
     margin-top: 9px;
   }
+
+  @include for-size(map.get($screens, xl)) {
+    width: 178px;
+  }
 }
 
 .card__schedule--transparent {
