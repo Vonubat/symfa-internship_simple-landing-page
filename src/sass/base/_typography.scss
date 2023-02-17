@@ -43,18 +43,45 @@
   line-height: 124.41%;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+
+  @include for-size(map.get($screens, lg)) {
+    font-weight: 500;
+    font-size: 0.875rem;
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    font-size: 0.75rem;
+  }
 }
 
 h1 {
   font-weight: 700;
   font-size: 2.5rem;
   line-height: 124.41%;
+
+  @include for-size(map.get($screens, lg)) {
+    font-size: 2.25rem;
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    font-size: 1.5rem;
+  }
 }
 
 .heading__workshops {
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 124.41%;
+
+  @include for-size(map.get($screens, lg)) {
+    font-weight: 500;
+    line-height: 143.55%;
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    font-weight: 400;
+    font-size: 0.875rem;
+  }
 }
 
 .header-badge {
