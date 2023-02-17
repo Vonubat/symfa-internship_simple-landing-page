@@ -27,6 +27,34 @@
       padding: 0 30px 0 50px;
     }
   }
+
+  @include for-size(map.get($screens, xl)) {
+    width: 280px;
+    height: 235px;
+    box-shadow: 0 30px 100px rgba($color-card-shadow, 0.1);
+
+    .statistics__title {
+      margin-top: 39px;
+    }
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    &:nth-child(1) {
+      order: 1;
+    }
+
+    &:nth-child(2) {
+      order: 3;
+    }
+
+    &:nth-child(3) {
+      order: 2;
+    }
+
+    &:nth-child(4) {
+      order: 4;
+    }
+  }
 }
 
 .card__targets {
