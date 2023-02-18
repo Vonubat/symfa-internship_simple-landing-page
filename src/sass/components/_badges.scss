@@ -16,4 +16,9 @@
   border-radius: 300px;
 
   @include center-inside-elem-flex;
+
+  @include for-size(map.get($screens, md-2)) {
+    width: 61.7px;
+    height: 61.7px;
+  }
 }

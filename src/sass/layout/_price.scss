@@ -1,5 +1,13 @@
 .price {
   min-height: 597px;
+
+  @include for-size(map.get($screens, lg)) {
+    min-height: 944px;
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    min-height: 1503px;
+  }
 }
 
 .price__content {
@@ -10,6 +18,15 @@
 
 .price__heading {
   margin-top: 104px;
+
+  @include for-size(map.get($screens, lg)) {
+    margin-top: 67px;
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    margin-top: 59px;
+    text-align: center;
+  }
 }
 
 .price__cards-wrapper {
@@ -18,4 +35,14 @@
   gap: 42px;
   justify-content: center;
   margin-top: 60px;
+
+  @include for-size(map.get($screens, lg)) {
+    gap: 22px;
+    row-gap: 30px;
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    gap: 10px;
+    margin-top: 40px;
+  }
 }

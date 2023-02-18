@@ -384,6 +384,10 @@ h1 {
   font-weight: 700;
   font-size: 1.875rem;
   line-height: 124.41%;
+
+  @include for-size(map.get($screens, md-2)) {
+    font-size: 1.5rem;
+  }
 }
 
 .price__title {
@@ -391,6 +395,11 @@ h1 {
   font-weight: 700;
   font-size: 1.563rem;
   line-height: 2.5rem;
+
+  @include for-size(map.get($screens, lg)) {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
 }
 
 .price__text {
@@ -406,6 +415,10 @@ h1 {
   font-size: 0.75rem;
   line-height: 124.41%;
   text-transform: uppercase;
+
+  @include for-size(map.get($screens, md-2)) {
+    font-size: 0.514rem;
+  }
 }
 
 .included__heading {
