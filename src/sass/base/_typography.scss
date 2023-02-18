@@ -255,3 +255,18 @@
   line-height: 124.41%;
   text-transform: uppercase;
 }
+
+.included__title {
+  color: $color-primary;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 143.55%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.included__text {
+  color: $color-card-text;
+  font-size: 0.875rem;
+  line-height: 143.55%;
+}
