@@ -1,6 +1,16 @@
 .gallery {
   min-height: 656px;
   margin-top: 118.5px;
+
+  @include for-size(map.get($screens, xl)) {
+    min-height: 478px;
+    margin-top: 79px;
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    min-height: 647px;
+    margin-top: 73px;
+  }
 }
 
 .gallery__content {
@@ -9,12 +19,29 @@
 
 .gallery__heading {
   width: 539px;
+
+  @include for-size(map.get($screens, md-2)) {
+    width: 303px;
+    text-align: center;
+  }
 }
 
 .gallery__img-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-gap: 17px 25.2px;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(4, auto);
+  margin: 0 auto;
   margin-top: 65px;
-  row-gap: 23px;
+
+  @include for-size(map.get($screens, lg)) {
+    grid-gap: 0 5px;
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    grid-gap: 0 2px;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+    margin-top: 30px;
+  }
 }
