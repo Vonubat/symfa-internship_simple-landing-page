@@ -2,4 +2,9 @@
   @include center-elem-absolute;
 
   cursor: pointer;
+
+  @include for-size(map.get($screens, md)) {
+    width: 70px;
+    height: 70px;
+  }
 }

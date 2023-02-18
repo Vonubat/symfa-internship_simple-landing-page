@@ -233,7 +233,11 @@
           <div class="mentor__cards-wrapper">
             <div class="mentor__cards-wrapper--solid">
               <article class="card card__mentor--media">
-                <img class="mentor__video" src="./assets/mentor/video-preview-xl.png" alt="video preview" />
+                <picture class="mentor__video">
+                  <source media="(max-width:700px)" srcset="./assets/mentor/video-preview-sm.png" />
+                  <source media="(max-width:976px)" srcset="./assets/mentor/video-preview-md.png" />
+                  <img src="./assets/mentor/video-preview-xl.png" alt="video preview" />
+                </picture>
                 <img class="icon__play" src="./assets/mentor/icon-play.png" alt="play icon" />
               </article>
               <article class="card card__mentor--solid">
