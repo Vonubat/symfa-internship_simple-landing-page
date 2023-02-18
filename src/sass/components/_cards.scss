@@ -41,3 +41,30 @@
     margin-top: 13.5px;
   }
 }
+
+.card__schedule--transparent {
+  width: 230px;
+
+  & > * {
+    margin: 0;
+  }
+
+  .card__schedule--text {
+    margin-top: 10px;
+  }
+}
+
+.card__schedule--solid {
+  width: 230px;
+  height: 112px;
+  padding: 60px 40px 40px 60px;
+  box-shadow: 0 30px 100px rgba($color-primary, 0.1);
+
+  & > * {
+    margin: 0;
+  }
+
+  .card__schedule--text {
+    margin-top: 10px;
+  }
+}

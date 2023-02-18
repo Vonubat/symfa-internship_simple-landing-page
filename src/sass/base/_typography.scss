@@ -16,7 +16,9 @@
 
 .link__city,
 .button--mint,
-.heading__city-date {
+.heading__city-date,
+.card__schedule--heading,
+.link-full-program {
   text-transform: uppercase;
 }
 
@@ -112,7 +114,8 @@
   line-height: 143.55%;
 }
 
-.card__targets--heading {
+.card__targets--heading,
+.card__schedule--heading {
   color: $color-primary;
   font-weight: 600;
   font-size: 0.875rem;
@@ -120,8 +123,23 @@
   letter-spacing: 0.05em;
 }
 
-.card__targets--text {
+.card__targets--text,
+.card__schedule--text {
   color: $color-card-text;
   font-size: 0.875rem;
   line-height: 143.55%;
+}
+
+.card__schedule--solid {
+  .card__schedule--text {
+    font-weight: 600;
+  }
+}
+
+.link-full-program {
+  color: $color-primary;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 143.55%;
+  text-decoration: underline dashed $color-primary;
 }
