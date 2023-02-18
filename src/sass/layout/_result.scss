@@ -3,6 +3,14 @@
   background-color: rgba($color-primary, 0.05);
 
   @include center-inside-elem-flex;
+
+  @include for-size(map.get($screens, lg)) {
+    min-height: 1579px;
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    min-height: 2200px;
+  }
 }
 
 .result__content {
@@ -12,13 +20,30 @@
   width: 100%;
   min-height: 772px;
   background-color: $color-primary;
+
+  @include for-size(map.get($screens, lg)) {
+    min-height: 1459px;
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    min-height: 2030px;
+  }
 }
 
 .result__heading {
   width: 100%;
   max-width: 1169px;
-  height: 34px;
   margin-top: 34px;
+
+  @include for-size(map.get($screens, lg)) {
+    max-width: 566px;
+    margin-top: 50px;
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    max-width: 304px;
+    text-align: center;
+  }
 }
 
 .result__cards-wrapper {
@@ -29,4 +54,16 @@
   width: 100%;
   margin-top: 66px;
   row-gap: 41px;
+
+  @include for-size(map.get($screens, lg)) {
+    gap: 25px;
+    margin-top: 70px;
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: 38px;
+  }
 }
