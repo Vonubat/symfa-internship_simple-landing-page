@@ -28,7 +28,7 @@
         </nav>
         <article class="header__description">
           <time class="heading__city-date">Санкт-петербург 10-21 мая</time>
-          <h1 class="h1">
+          <h1>
             Начни делать <br />
             Customer Development <br />
             и проверять гипотезы
@@ -43,7 +43,7 @@
           <h3 class="header-ellipse__text--mark">9 из 10</h3>
           <span class="header-ellipse__text--person">Иван Матвиенко</span>
           <span class="header-ellipse__text--company">Wimprof</span>
-          <a class="link link-review header-ellipse__review" href="#">
+          <a class="link link__review header-ellipse__review" href="#">
             <span class="header-ellipse__text--review">Читать отзыв →</span>
           </a>
         </div>
@@ -52,29 +52,27 @@
     <main class="main">
       <section class="statistics">
         <div class="statistics__content">
-          <h2 class="statistics__heading content__heading"></h2>
+          <h2 class="statistics__heading content__heading content__heading--black"></h2>
           <div class="statistics__cards-wrapper">
             <article class="card card__statistics">
-              <h3 class="card__statistics--heading">94%</h3>
-              <p class="card__statistics--text">
+              <h3 class="statistics__title">94%</h3>
+              <p class="statistics__text">
                 стартапов умирают в течение 3 лет, и главная причина этого — отсутствие product-market fit
               </p>
             </article>
             <article class="card card__statistics">
-              <h3 class="card__statistics--heading">только 50%</h3>
-              <p class="card__statistics--text">
+              <h3 class="statistics__title">только 50%</h3>
+              <p class="statistics__text">
                 компаний по результатам исследования SaaS проводят многовариантные A / B тестирования
               </p>
             </article>
             <article class="card card__statistics">
-              <h3 class="card__statistics--heading">менее 50%</h3>
-              <p class="card__statistics--text">
-                тестируемых Amazon функций реально запускаются после проверки гипотез
-              </p>
+              <h3 class="statistics__title">менее 50%</h3>
+              <p class="statistics__text">тестируемых Amazon функций реально запускаются после проверки гипотез</p>
             </article>
             <article class="card card__statistics">
-              <h3 class="card__statistics--heading">от 40 до 90%</h3>
-              <p class="card__statistics--text">
+              <h3 class="statistics__title">от 40 до 90%</h3>
+              <p class="statistics__text">
                 новых продуктов не получают значительного признания нa рынке, так как строятся на основе творчества,
                 интуиции и интеллекта
               </p>
@@ -85,34 +83,36 @@
 
       <section class="targets">
         <div class="targets__content">
-          <h2 class="targets__heading content__heading">Кому и зачем знать Customer Development</h2>
+          <h2 class="targets__heading content__heading content__heading--black">
+            Кому и зачем знать Customer Development
+          </h2>
           <div class="targets__cards-wrapper">
             <article class="card card__targets">
-              <h4 class="card__targets--heading">
+              <h4 class="targets__title">
                 ПРОДУКТОВОМУ<br />
                 ДИЗАЙНЕРУ
               </h4>
-              <p class="card__targets--text">
+              <p class="targets__text">
                 лучше узнать потребность клиента и научиться быстро проверять прототипы и макеты на пользователях чтобы
                 исправлять ошибки и делать интерфейсы кратно качественнее
               </p>
             </article>
             <article class="card card__targets">
-              <h4 class="card__targets--heading">
+              <h4 class="targets__title">
                 ПРОДАКТ-<br />
                 МЕНЕДЖЕРАМ
               </h4>
-              <p class="card__targets--text">
+              <p class="targets__text">
                 идеально знать мотивацию своих пользователей и принимать продуктовые решения быстрее и значительно
                 качественнее
               </p>
             </article>
             <article class="card card__targets">
-              <h4 class="card__targets--heading">
+              <h4 class="targets__title">
                 ОСНОВАТЕЛЯМ<br />
                 СТАРТАПОВ
               </h4>
-              <p class="card__targets--text">
+              <p class="targets__text">
                 запустить процесс проверки гипотез в котором вы быстрее и ЗНАЧИТЕЛЬНО дешевле найдёте product-market fit
               </p>
             </article>
@@ -122,36 +122,85 @@
 
       <section class="schedule">
         <div class="schedule__content">
-          <h2 class="schedule__heading content__heading">Что будет на курсе</h2>
+          <h2 class="schedule__heading content__heading content__heading--black">Что будет на курсе</h2>
           <div class="schedule__cards-wrapper">
             <div class="schedule__cards-wrapper--transparent">
               <article class="card card__schedule--transparent">
-                <h4 class="card__schedule--heading">7 лекций</h4>
-                <p class="card__schedule--text">насыщенных практикой</p>
+                <h4 class="schedule__title">7 лекций</h4>
+                <p class="schedule__text">насыщенных практикой</p>
               </article>
               <article class="card card__schedule--transparent">
-                <h4 class="card__schedule--heading">2 гипотезы</h4>
-                <p class="card__schedule--text">минимум, которые проверишь на курсе</p>
+                <h4 class="schedule__title">2 гипотезы</h4>
+                <p class="schedule__text">минимум, которые проверишь на курсе</p>
               </article>
               <article class="card card__schedule--transparent">
-                <h4 class="card__schedule--heading">3 методички</h4>
-                <p class="card__schedule--text">
+                <h4 class="schedule__title">3 методички</h4>
+                <p class="schedule__text">
                   с пошаговым описанием действий как провести классный CustDev и как проверить любую гипотезу
                 </p>
               </article>
               <article class="card card__schedule--transparent">
-                <h4 class="card__schedule--heading">20 интервью</h4>
-                <p class="card__schedule--text">с пользователями твоего продукта</p>
+                <h4 class="schedule__title">20 интервью</h4>
+                <p class="schedule__text">с пользователями твоего продукта</p>
               </article>
             </div>
             <div class="schedule__cards-wrapper--solid">
               <article class="card card__schedule--solid">
-                <h4 class="card__schedule--heading">Начнешь, наконец, делать custdev</h4>
-                <p class="card__schedule--text">про который все давно говорят, но мало кто делает</p>
+                <h4 class="schedule__title">Начнешь, наконец, делать custdev</h4>
+                <p class="schedule__text">про который все давно говорят, но мало кто делает</p>
               </article>
             </div>
           </div>
-          <a class="link link-full-program schedule__full-program" href="#"> Смотреть программу полностью </a>
+          <a class="link link__full-program schedule__full-program" href="#"> Смотреть программу полностью </a>
+        </div>
+      </section>
+
+      <section class="result">
+        <div class="result__content">
+          <h2 class="result__heading content__heading content__heading--white">Результат</h2>
+          <div class="result__cards-wrapper">
+            <article class="card card__result">
+              <img class="result__icon" src="./assets/result-icons/lamp.png" alt="lamp icon" />
+              <div>
+                <h4 class="result__title">
+                  Ты начнёшь делать Customer Development и проверять гипотезы в своём проекте
+                </h4>
+                <p class="result__text">
+                  Структура курса построена построена вокруг практики в проектах участников курса. 100% слушателей этого
+                  курса будут применять оба навыка в своих проектах
+                </p>
+              </div>
+            </article>
+            <article class="card card__result">
+              <img class="result__icon" src="./assets/result-icons/process.png" alt="process icon" />
+              <div>
+                <h4 class="result__title">Заведенный процесс</h4>
+                <p class="result__text">
+                  Обязательной частью обучения будет встройка процессов постоянного Customer Development и проверки
+                  гипотез в ежедневную рутину
+                </p>
+              </div>
+            </article>
+            <article class="card card__result">
+              <img class="result__icon" src="./assets/result-icons/instruments.png" alt="instruments icon" />
+              <div>
+                <h4 class="result__title">Инструменты, которые останутся с вами надолго</h4>
+                <p class="result__text">
+                  Все участники курса получат два набора карт — конструкторы, из которых можно будет собрать идеальный
+                  процесс Customer Development и проверить любую гипотезу
+                </p>
+              </div>
+            </article>
+            <article class="card card__result">
+              <img class="result__icon" src="./assets/result-icons/cases.png" alt="cases icon" />
+              <div>
+                <h4 class="result__title">Кейсы и приёмы топовых компаний рунета</h4>
+                <p class="result__text">
+                  Расскажу и разберём кейсы, хаки и нюансы топовых команд России: SkyEng, Яндекс, Chatfuel
+                </p>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
     </main>

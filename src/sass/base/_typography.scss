@@ -14,16 +14,14 @@
   font-weight: 700;
 }
 
-.link__city,
-.button--mint,
-.heading__city-date,
-.card__schedule--heading,
-.link-full-program {
+.link__city {
   text-transform: uppercase;
 }
 
 .button--white {
   color: $color-primary;
+  font-size: 0.875rem;
+  line-height: 119.62%;
 }
 
 .button--mint {
@@ -31,6 +29,7 @@
   font-weight: 700;
   font-size: 0.875rem;
   line-height: 124.41%;
+  text-transform: uppercase;
 }
 
 .header__description {
@@ -38,10 +37,10 @@
 }
 
 .heading__city-date {
-  font-weight: 400;
   font-size: 1rem;
   line-height: 124.41%;
   letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 .h1 {
@@ -60,17 +59,13 @@
   color: $color-primary;
 }
 
-.header-ellipse__text--mark,
-.header-ellipse__text--company {
-  font-weight: 700;
-}
-
 .header-ellipse__text--subject {
   font-size: 0.875rem;
   line-height: 153.12%;
 }
 
 .header-ellipse__text--mark {
+  font-weight: 700;
   font-size: 2.125rem;
   line-height: 153.12%;
 }
@@ -81,6 +76,7 @@
 }
 
 .header-ellipse__text--company {
+  font-weight: 700;
   font-size: 0.875rem;
   line-height: 143.55%;
 }
@@ -90,32 +86,38 @@
   line-height: 200%;
 }
 
-.link-review {
+.link__review {
   color: $color-primary;
+}
+
+.content__heading--white {
+  color: white;
+}
+
+.content__heading--black {
+  color: black;
 }
 
 .content__heading {
   font-weight: 700;
   font-size: 1.875rem;
   line-height: 124.41%;
-  white-space: pre-wrap;
 }
 
-.card__statistics--heading {
+.statistics__title {
   color: $color-primary;
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 143.55%;
 }
 
-.card__statistics--text {
+.statistics__text {
   color: $color-card-text;
   font-size: 0.875rem;
   line-height: 143.55%;
 }
 
-.card__targets--heading,
-.card__schedule--heading {
+.targets__title {
   color: $color-primary;
   font-weight: 600;
   font-size: 0.875rem;
@@ -123,23 +125,53 @@
   letter-spacing: 0.05em;
 }
 
-.card__targets--text,
-.card__schedule--text {
+.targets__text {
+  color: $color-card-text;
+  font-size: 0.875rem;
+  line-height: 143.55%;
+}
+
+.schedule__title {
+  color: $color-primary;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 143.55%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.schedule__text {
   color: $color-card-text;
   font-size: 0.875rem;
   line-height: 143.55%;
 }
 
 .card__schedule--solid {
-  .card__schedule--text {
+  .schedule__text {
     font-weight: 600;
   }
 }
 
-.link-full-program {
+.link__full-program {
   color: $color-primary;
   font-weight: 600;
   font-size: 0.875rem;
   line-height: 143.55%;
+  text-transform: uppercase;
   text-decoration: underline dashed $color-primary;
+}
+
+.result__title {
+  color: $color-primary;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 143.55%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.result__text {
+  color: $color-card-text;
+  font-size: 1rem;
+  line-height: 143.55%;
 }

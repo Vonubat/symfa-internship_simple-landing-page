@@ -7,24 +7,23 @@
   height: 221px;
   box-shadow: 0 20px 40px rgba($color-primary, 0.1);
 
-  .card__statistics--heading {
-    margin: 0;
+  .statistics__title {
     margin-top: 34px;
     padding: 0 50px;
   }
 
-  .card__statistics--text {
+  .statistics__text {
     margin-top: 13.5px;
   }
 
   &:nth-child(odd) {
-    .card__statistics--text {
+    .statistics__text {
       padding: 0 50px;
     }
   }
 
   &:nth-child(even) {
-    .card__statistics--text {
+    .statistics__text {
       padding: 0 30px 0 50px;
     }
   }
@@ -33,11 +32,7 @@
 .card__targets {
   width: 225px;
 
-  & > * {
-    margin: 0;
-  }
-
-  .card__targets--text {
+  .targets__text {
     margin-top: 13.5px;
   }
 }
@@ -45,11 +40,7 @@
 .card__schedule--transparent {
   width: 230px;
 
-  & > * {
-    margin: 0;
-  }
-
-  .card__schedule--text {
+  .schedule__text {
     margin-top: 10px;
   }
 }
@@ -60,11 +51,21 @@
   padding: 60px 40px 40px 60px;
   box-shadow: 0 30px 100px rgba($color-primary, 0.1);
 
-  & > * {
-    margin: 0;
+  .schedule__text {
+    margin-top: 10px;
   }
+}
 
-  .card__schedule--text {
+.card__result {
+  display: flex;
+  gap: 35px;
+  width: 456.5px;
+  height: 168.5px;
+  padding: 55px;
+  background-color: white;
+  box-shadow: 0 10px 30px rgba($color-primary, 0.1);
+
+  .result__text {
     margin-top: 10px;
   }
 }
