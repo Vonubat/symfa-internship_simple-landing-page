@@ -5,9 +5,10 @@
 @import "./base/normalize";
 @import "./base/typography";
 @import "./components/buttons";
-@import "./components/ellipses";
+@import "./components/badges";
 @import "./components/cards";
 @import "./components/content";
+@import "./components/arrows";
 @import "./layout/header";
 @import "./layout/navigation";
 @import "./layout/statistics";
@@ -15,6 +16,7 @@
 @import "./layout/schedule";
 @import "./layout/result";
 @import "./layout/mentor";
+@import "./layout/reviews";
 
 html {
   box-sizing: border-box;

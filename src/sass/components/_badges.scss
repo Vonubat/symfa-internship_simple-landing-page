@@ -1,8 +1,8 @@
-.ellipse {
+.badge {
   width: 231px;
   min-height: 231px;
   border-radius: 50%;
 
-  @include ellipse-gradient;
+  @include badge-gradient;
   @include center-inside-elem-flex;
 }
