@@ -442,7 +442,10 @@
             </article>
             <article class="card card__included">
               <div class="card__included--media">
-                <img class="included__video" src="./assets/included/video-preview-xl.png" alt="video preview" />
+                <picture class="included__video">
+                  <source media="(max-width:976px)" srcset="./assets/included/video-preview-md-sm.png" />
+                  <img src="./assets/included/video-preview-xl.png" alt="video preview" />
+                </picture>
                 <img class="icon__play" src="./assets/included/icon-play.png" alt="play icon" />
               </div>
               <h4 class="included__title">Видеозапись курса</h4>

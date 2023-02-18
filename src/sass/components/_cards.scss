@@ -503,10 +503,6 @@
   background-color: white;
   box-shadow: 0 10px 30px rgba($color-card-shadow, 0.12);
 
-  .result__text {
-    margin-top: 10px;
-  }
-
   &:nth-child(1) {
     gap: 39px;
     width: 410px;
@@ -574,6 +570,72 @@
 
     .included__text {
       margin-top: 13px;
+    }
+  }
+
+  @include for-size(map.get($screens, lg)) {
+    flex-direction: column;
+    box-shadow: 0 20px 50px rgba($color-card-shadow, 0.12);
+
+    &:nth-child(1) {
+      gap: 0;
+      width: 282.25px;
+      height: 350px;
+      padding: 61px 5px 29px 56px;
+
+      .included__title {
+        margin-top: 35px;
+      }
+
+      .included__text {
+        margin-top: 14px;
+      }
+    }
+
+    &:nth-child(2) {
+      gap: 0;
+      width: 282.25px;
+      height: 350px;
+      padding: 60px 47px 29px 52px;
+
+      .included__title {
+        margin-top: 65px;
+      }
+
+      .included__text {
+        margin-top: 14px;
+      }
+    }
+
+    &:nth-child(3) {
+      gap: 0;
+      width: 282.25px;
+      height: 350px;
+      padding: 56px 45px 78px 53px;
+
+      .card__included--media {
+        position: relative;
+        width: 179px;
+        height: 166px;
+      }
+
+      .included__title {
+        margin-top: 33px;
+      }
+    }
+
+    &:nth-child(4) {
+      width: 282.25px;
+      height: 350px;
+      padding: 37px 43px 0 52px;
+
+      .included__title {
+        margin-top: 23px;
+      }
+
+      .included__text {
+        margin-top: 13px;
+      }
     }
   }
 }

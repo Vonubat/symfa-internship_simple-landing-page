@@ -5,6 +5,17 @@
   background-repeat: no-repeat;
 
   @include center-inside-elem-flex;
+
+  @include for-size(map.get($screens, xl)) {
+    min-height: 975px;
+    margin-top: 0;
+    background-color: $color-primary;
+    background-image: none;
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    min-height: 1736px;
+  }
 }
 
 .included__content {
@@ -14,10 +25,30 @@
   padding-left: 285px;
   background-image: url($bg-included-upper-xl);
   background-repeat: no-repeat;
+
+  @include for-size(map.get($screens, xl)) {
+    height: 100%;
+    min-height: 975px;
+    padding-left: 0;
+    background-image: none;
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    min-height: 1736px;
+  }
 }
 
 .included__heading {
   margin-top: 134px;
+
+  @include for-size(map.get($screens, xl)) {
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    margin-top: 85px;
+  }
 }
 
 .included__cards-wrapper {
@@ -26,4 +57,19 @@
   gap: 50px;
   margin-top: 66px;
   row-gap: 66px;
+
+  @include for-size(map.get($screens, xl)) {
+    justify-content: center;
+  }
+
+  @include for-size(map.get($screens, xl)) {
+    gap: 14.5px;
+    row-gap: 16px;
+    margin-top: 60px;
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    gap: 10px;
+    margin-top: 67px;
+  }
 }
