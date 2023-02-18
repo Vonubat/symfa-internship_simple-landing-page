@@ -9,4 +9,8 @@
   &::placeholder {
     color: $color-input-text;
   }
+
+  @include for-size(map.get($screens, lg)) {
+    width: 280px;
+  }
 }
