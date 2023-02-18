@@ -97,3 +97,23 @@
 .link-review {
   color: $color-primary;
 }
+
+.content__heading {
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 124.41%;
+  white-space: pre-wrap;
+}
+
+.card__statistics--heading {
+  color: $color-primary;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 143.55%;
+}
+
+.card__statistics--text {
+  color: $color-card-text;
+  font-size: 0.875rem;
+  line-height: 143.55%;
+}

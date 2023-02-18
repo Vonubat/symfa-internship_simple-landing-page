@@ -4,10 +4,13 @@
 @import "./abstracts/mixins";
 @import "./base/normalize";
 @import "./base/typography";
-@import "./layout/header";
-@import "./layout/navigation";
 @import "./components/buttons";
 @import "./components/ellipses";
+@import "./components/cards";
+@import "./components/content";
+@import "./layout/header";
+@import "./layout/navigation";
+@import "./layout/statistics";
 
 html {
   box-sizing: border-box;
