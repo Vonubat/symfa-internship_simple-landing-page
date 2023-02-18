@@ -29,3 +29,15 @@
     }
   }
 }
+
+.card__targets {
+  width: 225px;
+
+  & > * {
+    margin: 0;
+  }
+
+  .card__targets--text {
+    margin-top: 13.5px;
+  }
+}

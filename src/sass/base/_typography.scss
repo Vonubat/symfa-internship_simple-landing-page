@@ -58,12 +58,6 @@
   color: $color-primary;
 }
 
-.header-ellipse__text--subject,
-.header-ellipse__text--person,
-.header-ellipse__text--review {
-  font-weight: 400;
-}
-
 .header-ellipse__text--mark,
 .header-ellipse__text--company {
   font-weight: 700;
@@ -113,6 +107,20 @@
 }
 
 .card__statistics--text {
+  color: $color-card-text;
+  font-size: 0.875rem;
+  line-height: 143.55%;
+}
+
+.card__targets--heading {
+  color: $color-primary;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 143.55%;
+  letter-spacing: 0.05em;
+}
+
+.card__targets--text {
   color: $color-card-text;
   font-size: 0.875rem;
   line-height: 143.55%;
