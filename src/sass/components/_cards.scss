@@ -65,7 +65,57 @@
   background-color: white;
   box-shadow: 0 10px 30px rgba($color-primary, 0.1);
 
+  .result__icon {
+    width: 60px;
+    height: 60px;
+  }
+
   .result__text {
     margin-top: 10px;
+  }
+}
+
+.card__mentor--media {
+  position: relative;
+
+  .mentor__video {
+    border-radius: 10px;
+  }
+
+  .play__icon {
+    @include center-elem-absolute;
+  }
+}
+
+.card__mentor--solid {
+  width: 257px;
+  height: 114px;
+  padding: 66px 31px 32px 63px;
+  box-shadow: 0 30px 100px rgba($color-primary, 0.1);
+}
+
+.card__mentor--transparent {
+  .mentor__title {
+    margin-top: 28px;
+  }
+
+  .mentor__text {
+    margin-top: 10px;
+  }
+
+  &:nth-child(1) {
+    width: 220px;
+  }
+
+  &:nth-child(2) {
+    width: 241.3px;
+  }
+
+  &:nth-child(3) {
+    width: 190px;
+  }
+
+  &:nth-child(4) {
+    width: 220px;
   }
 }
