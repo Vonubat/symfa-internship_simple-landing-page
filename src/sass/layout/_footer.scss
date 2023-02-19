@@ -1,5 +1,13 @@
 .footer {
-  min-height: 447px;
+  max-height: 447px;
+
+  @include for-size(map.get($screens, lg)) {
+    max-height: 546px;
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    max-height: 915px;
+  }
 }
 
 .footer__container {
@@ -9,6 +17,7 @@
 
 .footer__form {
   display: flex;
+  flex-wrap: wrap;
   gap: 35.5px;
   justify-content: center;
   align-items: center;
@@ -19,6 +28,33 @@
     width: 259px;
     height: 50px;
     margin-left: 7.5px;
+  }
+
+  @include for-size(map.get($screens, xl)) {
+    background-color: white;
+  }
+
+  @include for-size(map.get($screens, lg)) {
+    gap: 20px;
+    align-content: start;
+    height: 262px;
+    margin-top: 63px;
+    row-gap: 32px;
+
+    .button__submit {
+      width: 280px;
+      margin: 0;
+    }
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    gap: 20px;
+    height: 370px;
+    margin-top: 108px;
+
+    .button__submit {
+      margin-top: 18px;
+    }
   }
 }
 
@@ -32,6 +68,25 @@
     max-width: 1180px;
     height: 128px;
     margin: 0 auto;
+  }
+
+  @include for-size(map.get($screens, lg)) {
+    .footer__navigation {
+      max-width: 768px;
+      height: 142px;
+      margin: 0;
+      padding: 0 18px;
+    }
+
+    @include for-size(map.get($screens, md-2)) {
+      .footer__navigation {
+        flex-wrap: wrap;
+        gap: 33px;
+        justify-content: center;
+        align-content: start;
+        height: 248px;
+      }
+    }
   }
 }
 
@@ -51,6 +106,35 @@
       display: flex;
       flex-wrap: wrap;
       gap: 50px;
+    }
+  }
+
+  @include for-size(map.get($screens, lg)) {
+    .footer__additional-info {
+      max-width: 768px;
+      padding: 0 18px;
+
+      .flex-container {
+        flex-direction: column;
+        gap: 7px;
+      }
+    }
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    .footer__additional-info {
+      flex-direction: column;
+      gap: 40px;
+      justify-content: center;
+      height: 186px;
+
+      .copyright {
+        order: 2;
+      }
+
+      .flex-container {
+        text-align: center;
+      }
     }
   }
 }

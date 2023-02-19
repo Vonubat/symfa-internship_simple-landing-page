@@ -66,6 +66,13 @@
   justify-content: space-between;
   align-items: center;
   width: 317px;
+
+  @include for-size(map.get($screens, md-2)) {
+    flex-direction: column;
+    gap: 16px;
+    width: 304px;
+    margin-top: 45px;
+  }
 }
 
 .navigation__menu {
