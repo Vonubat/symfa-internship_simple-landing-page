@@ -5,7 +5,7 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import { type WebpackConfiguration } from 'webpack-cli';
 
 interface IWebpackEnv {
-  port: string | undefined;
+  port?: string;
 }
 
 export default ({ port }: IWebpackEnv): WebpackConfiguration => ({
