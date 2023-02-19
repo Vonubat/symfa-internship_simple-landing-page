@@ -168,6 +168,10 @@
   height: 212px;
   padding: 66px 31px 32px 63px;
   box-shadow: 0 30px 100px rgba($color-card-shadow, 0.1);
+
+  @include for-size(map.get($screens, xl)) {
+    display: none;
+  }
 }
 
 .card__mentor--transparent {
@@ -193,6 +197,79 @@
 
   &:nth-child(4) {
     width: 205px;
+  }
+
+  @include for-size(map.get($screens, lg)) {
+    &:nth-child(1) {
+      .mentor__title {
+        margin-top: 13px;
+      }
+
+      .mentor__text {
+        margin-top: 15px;
+      }
+    }
+
+    &:nth-child(2) {
+      width: 245px;
+
+      .mentor__title {
+        margin-top: 14px;
+      }
+
+      .mentor__text {
+        margin-top: 15px;
+      }
+    }
+
+    &:nth-child(3) {
+      .mentor__title {
+        margin-top: 25px;
+      }
+
+      .mentor__text {
+        margin-top: 18px;
+      }
+    }
+
+    &:nth-child(4) {
+      width: 245px;
+      padding-right: 30px;
+
+      .mentor__text {
+        margin-top: 19px;
+      }
+    }
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    &:nth-child(1) {
+      width: 200px;
+
+      .mentor__title {
+        margin-top: 16px;
+      }
+    }
+
+    &:nth-child(2) {
+      width: 200px;
+
+      .mentor__title {
+        margin-top: 15px;
+      }
+    }
+
+    &:nth-child(3) {
+      width: 200px;
+
+      .mentor__title {
+        margin-top: 13px;
+      }
+    }
+
+    &:nth-child(4) {
+      width: 200px;
+    }
   }
 }
 

@@ -3,6 +3,14 @@
   flex-direction: column;
   align-items: center;
   min-height: 1078px;
+
+  @include for-size(map.get($screens, lg)) {
+    min-height: 1431px;
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    min-height: 1826px;
+  }
 }
 
 .mentor__content {
@@ -10,17 +18,39 @@
   flex-flow: column;
   width: 100%;
   max-width: 1170px;
+
+  @include for-size(map.get($screens, lg)) {
+    max-width: 581px;
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    max-width: 304px;
+  }
 }
 
 .mentor__heading {
   width: 572px;
   margin-top: 54px;
+
+  @include for-size(map.get($screens, lg)) {
+    margin-top: 130px;
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    width: 304px;
+    margin-top: 33px;
+    text-align: center;
+  }
 }
 
 .mentor__cards-wrapper {
   display: flex;
   flex-direction: column;
   margin-top: 77px;
+
+  @include for-size(map.get($screens, md-2)) {
+    margin-top: 40px;
+  }
 }
 
 .mentor__cards-wrapper--solid {
@@ -33,4 +63,15 @@
   display: flex;
   justify-content: space-between;
   margin-top: 70px;
+
+  @include for-size(map.get($screens, lg)) {
+    flex-wrap: wrap;
+    gap: 70px;
+    margin-top: 72px;
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    gap: 45px;
+    justify-content: center;
+  }
 }
