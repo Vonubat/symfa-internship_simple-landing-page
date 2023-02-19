@@ -326,6 +326,89 @@
       margin-top: 30px;
     }
   }
+
+  @include for-size(map.get($screens, xl)) {
+    &:nth-child(1) {
+      order: 1;
+
+      .reviews__review-container {
+        padding: 40px 41px 20px 51px;
+
+        .reviews__text {
+          margin-top: 22px;
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      order: 3;
+
+      .reviews__review-container {
+        padding: 44px 41px 0 51px;
+
+        .reviews__text {
+          margin-top: 12px;
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      order: 2;
+
+      .reviews__review-container {
+        padding: 46px 55px 55px 54px;
+
+        .reviews__text {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    &:nth-child(1) {
+      .reviews__review-container {
+        width: 304px;
+        height: 292px;
+        padding: 40px 19px 18px 51px;
+
+        .reviews__text {
+          margin-top: 24px;
+          line-height: 172.05%;
+        }
+      }
+
+      .reviews__avatar {
+        margin-top: 30px;
+      }
+    }
+
+    &:nth-child(2) {
+      .reviews__review-container {
+        width: 304px;
+        height: 330px;
+        padding: 32px 32px 0 51px;
+
+        .reviews__text {
+          margin-top: 11px;
+          line-height: 178.05%;
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      .reviews__review-container {
+        width: 304px;
+        height: 663px;
+        padding: 46px 25px 97px 54px;
+
+        .reviews__text {
+          margin-top: 16px;
+          line-height: 190%;
+        }
+      }
+    }
+  }
 }
 
 .card__price {

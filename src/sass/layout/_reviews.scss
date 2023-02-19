@@ -11,12 +11,36 @@
   margin-left: 74.5px;
   background-image: url($bg-reviews-xl);
   background-repeat: no-repeat;
+
+  @include for-size(map.get($screens, xl)) {
+    align-items: center;
+    min-height: 1574px;
+    margin-left: 0;
+    background-color: rgba($color-primary, 0.05);
+    background-image: none;
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    min-height: 1889px;
+  }
 }
 
 .reviews__heading {
   width: 371px;
   margin-top: 60px;
   margin-left: 55px;
+
+  @include for-size(map.get($screens, xl)) {
+    width: 554px;
+    margin-top: 92px;
+    margin-left: 0;
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    width: 300px;
+    margin-top: 79px;
+    text-align: center;
+  }
 }
 
 .reviews__cards-wrapper {
@@ -27,6 +51,19 @@
   max-height: 710px;
   margin-top: 60px;
   margin-left: 55px;
+
+  @include for-size(map.get($screens, xl)) {
+    gap: 55px;
+    align-content: center;
+    max-height: 100%;
+    margin-top: 65px;
+    margin-left: 0;
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    gap: 30px;
+    margin-top: 45px;
+  }
 }
 
 .reviews-badge {
@@ -43,5 +80,9 @@
 
   .reviews-badge__review {
     margin-top: 20px;
+  }
+
+  @include for-size(map.get($screens, xl)) {
+    display: none;
   }
 }
