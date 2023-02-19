@@ -4,6 +4,14 @@
   align-items: center;
   min-height: 712.5px;
   background-color: white;
+
+  @include for-size(map.get($screens, xl)) {
+    min-height: 931px;
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    min-height: 1434px;
+  }
 }
 
 .statistics__content {
@@ -14,11 +22,44 @@
   max-width: 1175px;
   min-height: 526px;
   margin-top: 100px;
+
+  @include for-size(map.get($screens, xl)) {
+    justify-content: center;
+    align-items: center;
+    max-width: 736px;
+    min-height: 526px;
+    margin-top: 120px;
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    max-width: 320px;
+    min-height: 1217px;
+  }
 }
 
-.statistics__heading {
+.statistics__heading--xl {
   width: 430px;
   margin-top: 145px;
+
+  @include for-size(map.get($screens, xl)) {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    display: none;
+  }
+}
+
+.statistics__heading--sm {
+  display: none;
+  width: 304px;
+  height: 180px;
+  text-align: center;
+
+  @include for-size(map.get($screens, md-2)) {
+    display: block;
+  }
 }
 
 .statistics__cards-wrapper {
@@ -28,4 +69,18 @@
   row-gap: 61px;
   width: 659px;
   height: 526px;
+
+  @include for-size(map.get($screens, xl)) {
+    width: 580px;
+    height: 490px;
+    margin-top: 60px;
+    row-gap: 20px;
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    max-width: 281px;
+    min-height: 986px;
+    margin-top: 67px;
+    row-gap: 10px;
+  }
 }

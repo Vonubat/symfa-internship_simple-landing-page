@@ -119,10 +119,14 @@ h1 {
   color: $color-primary;
 }
 
-.statistics__heading {
+.statistics__heading--xl {
   color: black;
   font-weight: 700;
   font-size: 1.875rem;
+  line-height: 124.41%;
+}
+
+.statistics__heading--sm {
   line-height: 124.41%;
 }
 
