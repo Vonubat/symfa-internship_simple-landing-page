@@ -5,7 +5,7 @@
 .card__statistics {
   width: 313px;
   height: 221px;
-  box-shadow: 0 20px 40px rgba($color-primary, 0.1);
+  box-shadow: 0 20px 40px rgba($color-card-shadow, 0.1);
 
   .statistics__title {
     margin-top: 34px;
@@ -33,7 +33,7 @@
   width: 225px;
 
   .targets__text {
-    margin-top: 13.5px;
+    margin-top: 9px;
   }
 }
 
@@ -46,10 +46,10 @@
 }
 
 .card__schedule--solid {
-  width: 230px;
-  height: 112px;
+  width: 330px;
+  height: 212px;
   padding: 60px 40px 40px 60px;
-  box-shadow: 0 30px 100px rgba($color-primary, 0.1);
+  box-shadow: 0 30px 100px rgba($color-card-shadow, 0.1);
 
   .schedule__text {
     margin-top: 10px;
@@ -59,11 +59,11 @@
 .card__result {
   display: flex;
   gap: 35px;
-  width: 456.5px;
-  height: 168.5px;
+  width: 566px;
+  height: 278px;
   padding: 55px;
   background-color: white;
-  box-shadow: 0 10px 30px rgba($color-primary, 0.1);
+  box-shadow: 0 10px 30px rgba($color-card-shadow, 0.1);
 
   .result__icon {
     width: 60px;
@@ -81,22 +81,18 @@
   .mentor__video {
     border-radius: 10px;
   }
-
-  .play__icon {
-    @include center-elem-absolute;
-  }
 }
 
 .card__mentor--solid {
-  width: 257px;
-  height: 114px;
+  width: 351px;
+  height: 212px;
   padding: 66px 31px 32px 63px;
-  box-shadow: 0 30px 100px rgba($color-primary, 0.1);
+  box-shadow: 0 30px 100px rgba($color-card-shadow, 0.1);
 }
 
 .card__mentor--transparent {
   .mentor__title {
-    margin-top: 28px;
+    margin-top: 25px;
   }
 
   .mentor__text {
@@ -104,7 +100,7 @@
   }
 
   &:nth-child(1) {
-    width: 220px;
+    width: 228px;
   }
 
   &:nth-child(2) {
@@ -112,11 +108,11 @@
   }
 
   &:nth-child(3) {
-    width: 190px;
+    width: 187px;
   }
 
   &:nth-child(4) {
-    width: 220px;
+    width: 205px;
   }
 }
 
@@ -127,13 +123,13 @@
     position: relative;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 30px 100px rgba($color-primary, 0.1);
+    box-shadow: 0 10px 30px rgba($color-card-shadow, 0.1);
   }
 
   &:nth-child(1) {
     .reviews__review-container {
-      width: 462px;
-      height: 167px;
+      width: 554px;
+      height: 212px;
       padding: 27px 41px 18px 51px;
 
       .reviews__text {
@@ -148,8 +144,8 @@
 
   &:nth-child(2) {
     .reviews__review-container {
-      width: 462px;
-      height: 197px;
+      width: 554px;
+      height: 230px;
       padding: 27px 41px 0 51px;
     }
 
@@ -160,8 +156,8 @@
 
   &:nth-child(3) {
     .reviews__review-container {
-      width: 451px;
-      height: 292px;
+      width: 560px;
+      height: 390px;
       padding: 27px 55px 65px 50px;
 
       .reviews__text {
@@ -176,18 +172,18 @@
 }
 
 .card__price {
-  box-shadow: 0 20px 50px rgba($color-primary, 0.12);
+  box-shadow: 0 20px 50px rgba($color-card-shadow, 0.12);
 
   &:nth-child(-n + 3) {
     width: 271px;
     height: 293px;
 
     .price__text {
-      margin-top: 12px;
+      margin-top: 10px;
     }
 
     .button--mint {
-      margin-top: 33px;
+      margin-top: 37px;
     }
 
     @include center-inside-elem-flex;
@@ -205,7 +201,7 @@
   &:nth-child(4) {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 60px;
     justify-content: center;
     align-items: center;
     width: 570px;
@@ -213,7 +209,7 @@
     text-align: center;
 
     .price__text {
-      margin-top: 12px;
+      margin-top: 5px;
     }
   }
 }
@@ -221,7 +217,7 @@
 .card__included {
   display: flex;
   background-color: white;
-  box-shadow: 0 10px 30px rgba($color-primary, 0.1);
+  box-shadow: 0 10px 30px rgba($color-card-shadow, 0.12);
 
   .result__text {
     margin-top: 10px;
@@ -229,8 +225,8 @@
 
   &:nth-child(1) {
     gap: 39px;
-    width: 312px;
-    height: 109px;
+    width: 410px;
+    height: 219px;
     padding: 51px 57px 59px 41px;
 
     .included__icon {
@@ -249,8 +245,8 @@
 
   &:nth-child(2) {
     gap: 21px;
-    width: 320.5px;
-    height: 88px;
+    width: 410px;
+    height: 219px;
     padding: 56px 25.5px 75px 64px;
 
     .included__icon {
@@ -266,8 +262,8 @@
   &:nth-child(3) {
     flex-direction: column;
     gap: 33px;
-    width: 295px;
-    height: 216px;
+    width: 410px;
+    height: 326px;
     padding: 56px 57px 54px 58px;
 
     .card__included--media {
@@ -275,16 +271,12 @@
       width: 295px;
       height: 166px;
     }
-
-    .play__icon {
-      @include center-elem-absolute;
-    }
   }
 
   &:nth-child(4) {
     flex-direction: column;
-    width: 299px;
-    height: 271px;
+    width: 410px;
+    height: 326px;
     padding: 55px 47px 0 64px;
 
     .included__icon {

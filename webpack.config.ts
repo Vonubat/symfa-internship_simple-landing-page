@@ -5,11 +5,11 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import { type WebpackConfiguration } from 'webpack-cli';
 
 interface IWebpackEnv {
-  port: string;
+  port: string | undefined;
 }
 
 export default ({ port }: IWebpackEnv): WebpackConfiguration => ({
-  mode: 'development',
+  mode: port ? 'development' : 'production',
   entry: path.resolve(__dirname, 'src', 'main.ts'),
   output: {
     path: path.resolve(__dirname, 'build'),

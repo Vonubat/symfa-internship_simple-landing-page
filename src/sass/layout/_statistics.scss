@@ -9,21 +9,16 @@
 .statistics__content {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
   justify-content: space-between;
+  width: 100%;
+  max-width: 1175px;
   min-height: 526px;
   margin-top: 100px;
 }
 
 .statistics__heading {
-  width: 506px;
-  height: 187px;
+  width: 430px;
   margin-top: 145px;
-  white-space: pre-wrap; // Can't get the same structure like in mockup
-
-  &::before {
-    content: "Если вы не делаете \a Customer Development —\a вы не управляете\a движением\a к product-market fit";
-  }
 }
 
 .statistics__cards-wrapper {

@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack server --env port=8000",
+    "build": "webpack",
     "---------------------code verifiers----------------": "",
     "lint": "eslint --ext=ts . --color --quiet",
     "lint-fix": "eslint --ext=ts . --fix",

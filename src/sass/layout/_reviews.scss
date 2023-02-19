@@ -4,6 +4,7 @@
 }
 
 .reviews__content {
+  position: relative;
   display: flex;
   flex-direction: column;
   min-height: 895px;
@@ -14,9 +15,8 @@
 
 .reviews__heading {
   width: 371px;
-  height: 25px;
-  margin-top: 70px;
-  margin-left: 60px;
+  margin-top: 60px;
+  margin-left: 55px;
 }
 
 .reviews__cards-wrapper {
@@ -24,16 +24,16 @@
   flex-flow: column wrap;
   gap: 60px;
   align-content: flex-start;
-  max-height: 698px;
-  margin-top: 77px;
-  margin-left: 60px;
+  max-height: 710px;
+  margin-top: 60px;
+  margin-left: 55px;
 }
 
 .reviews-badge {
   @include center-inside-elem-flex;
 
-  // gap: 17px;
-  transform: translate(985px, -217px);
+  top: 73%;
+  right: 11%;
 
   .reviews-badge__text--subject {
     width: 100px;
