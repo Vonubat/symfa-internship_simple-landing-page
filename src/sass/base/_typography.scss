@@ -173,6 +173,10 @@ h1 {
   font-weight: 700;
   font-size: 1.875rem;
   line-height: 124.41%;
+
+  @include for-size(map.get($screens, md-2)) {
+    font-size: 1.5rem;
+  }
 }
 
 .schedule__title {
@@ -203,6 +207,13 @@ h1 {
   line-height: 143.55%;
   text-transform: uppercase;
   text-decoration: underline dashed $color-primary;
+  text-underline-offset: 8px;
+
+  @include for-size(map.get($screens, lg)) {
+    font-size: 0.875rem;
+    line-height: 203.05%;
+    letter-spacing: 0.05em;
+  }
 }
 
 .result__heading {

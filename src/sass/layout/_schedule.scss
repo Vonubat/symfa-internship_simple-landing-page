@@ -2,6 +2,16 @@
   min-height: 669px;
 
   @include center-inside-elem-flex;
+
+  @include for-size(map.get($screens, lg)) {
+    justify-content: start;
+    align-items: start;
+    min-height: 734px;
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    min-height: 856px;
+  }
 }
 
 .schedule__content {
@@ -10,17 +20,49 @@
   width: 100%;
   max-width: 970px;
   height: 475px;
+
+  @include for-size(map.get($screens, lg)) {
+    max-width: 529px;
+    height: 493px;
+    margin-top: 71px;
+    margin-left: 94px;
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    max-width: 320px;
+    height: 646px;
+    margin: 0 auto;
+    margin-top: 86px;
+  }
 }
 
 .schedule__heading {
   width: 371px;
   margin-top: 23px;
+
+  @include for-size(map.get($screens, lg)) {
+    margin-top: 0;
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    width: 304px;
+    text-align: center;
+  }
 }
 
 .schedule__cards-wrapper {
   display: flex;
   justify-content: space-between;
   margin-top: 45px;
+
+  @include for-size(map.get($screens, lg)) {
+    margin-top: 70px;
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    margin-top: 80px;
+    margin-left: 70px;
+  }
 }
 
 .schedule__cards-wrapper--transparent {
@@ -29,12 +71,34 @@
   gap: 72px;
   row-gap: 62px;
   width: 600px;
+
+  @include for-size(map.get($screens, lg)) {
+    gap: 67px;
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    flex-direction: column;
+    gap: 40px;
+    width: 230px;
+  }
 }
 
 .schedule__cards-wrapper--solid {
   margin-top: 35px;
+
+  @include for-size(map.get($screens, lg)) {
+    display: none;
+  }
 }
 
 .schedule__full-program {
   margin-top: auto;
+
+  @include for-size(map.get($screens, lg)) {
+    width: 250px;
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    margin-left: 70px;
+  }
 }
