@@ -8,13 +8,15 @@
 }
 
 .button__bg-wrapper {
-  width: 223px;
+  width: 100%;
+  max-width: 223px;
   height: 77px;
   background-color: rgba($color-mint, 0.5);
 }
 
 .button--white {
-  width: 160px;
+  width: 100%;
+  max-width: 160px;
   height: 42px;
   background-color: white;
 }

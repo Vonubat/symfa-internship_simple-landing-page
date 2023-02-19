@@ -1,10 +1,68 @@
 .navigation {
   display: flex;
+  align-items: center;
   white-space: nowrap;
+
+  .burger-menu {
+    display: none;
+    width: 30px;
+    height: 20px;
+  }
+
+  @include for-size(map.get($screens, lg)) {
+    justify-content: space-between;
+
+    .button__header {
+      display: none;
+    }
+
+    .burger-menu {
+      display: block;
+    }
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    justify-content: space-between;
+  }
 }
 
-.navigation__cities {
+.navigation__cities--header {
   display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  width: 317px;
+
+  .arrow-menu {
+    display: none;
+  }
+
+  @include for-size(map.get($screens, lg)) {
+    width: 166px;
+
+    .arrow-menu {
+      display: block;
+    }
+
+    .link__city {
+      &:nth-child(2) {
+        display: none;
+      }
+
+      &:nth-child(3) {
+        display: none;
+      }
+    }
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    display: none;
+  }
+}
+
+.navigation__cities--footer {
+  display: flex;
+  gap: 10px;
   justify-content: space-between;
   align-items: center;
   width: 317px;
@@ -12,9 +70,35 @@
 
 .navigation__menu {
   display: flex;
+  gap: 10px;
   justify-content: space-between;
   align-items: center;
   width: 471px;
   margin-right: calc(100vw / 21.82);
   margin-left: calc(100vw / 8.88);
+
+  .link__menu {
+    &:nth-child(5) {
+      display: none;
+    }
+  }
+
+  @include for-size(map.get($screens, lg)) {
+    width: 300px;
+    margin: 0;
+
+    .link__menu {
+      &:nth-child(-n + 4) {
+        display: none;
+      }
+
+      &:nth-child(5) {
+        display: block;
+      }
+    }
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    width: 120px;
+  }
 }
