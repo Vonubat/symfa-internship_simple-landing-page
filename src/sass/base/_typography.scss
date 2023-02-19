@@ -373,6 +373,10 @@ h1 {
   font-weight: 700;
   font-size: 1.875rem;
   line-height: 124.41%;
+
+  @include for-size(map.get($screens, md-2)) {
+    font-size: 1.5rem;
+  }
 }
 
 .price__heading {
