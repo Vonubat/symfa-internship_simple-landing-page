@@ -105,6 +105,54 @@
   .result__text {
     margin-top: 10px;
   }
+
+  @include for-size(map.get($screens, lg)) {
+    .result__text {
+      margin-top: 13px;
+    }
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    flex-direction: column;
+    gap: 43px;
+    width: 304px;
+
+    &:nth-child(1) {
+      height: 521px;
+      padding: 56px 42px 56px 62px;
+
+      .result__text {
+        margin-top: 24px;
+      }
+    }
+
+    &:nth-child(2) {
+      height: 400px;
+      padding: 55px 42px 54px 62px;
+
+      .result__text {
+        margin-top: 12px;
+      }
+    }
+
+    &:nth-child(3) {
+      height: 491px;
+      padding: 55px 45px 50px 60px;
+
+      .result__text {
+        margin-top: 16px;
+      }
+    }
+
+    &:nth-child(4) {
+      height: 430px;
+      padding: 55px 57px 63px 62px;
+
+      .result__text {
+        margin-top: 18px;
+      }
+    }
+  }
 }
 
 .card__mentor--media {

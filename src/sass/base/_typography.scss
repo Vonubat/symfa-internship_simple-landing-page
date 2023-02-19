@@ -221,6 +221,14 @@ h1 {
   font-weight: 700;
   font-size: 2.188rem;
   line-height: 124.41%;
+
+  @include for-size(map.get($screens, lg)) {
+    font-size: 1.875rem;
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    font-size: 1.5rem;
+  }
 }
 
 .result__title {
@@ -230,12 +238,24 @@ h1 {
   line-height: 143.55%;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+
+  @include for-size(map.get($screens, lg)) {
+    font-size: 0.875rem;
+  }
 }
 
 .result__text {
   color: $color-card-text;
   font-size: 1rem;
   line-height: 143.55%;
+
+  @include for-size(map.get($screens, lg)) {
+    font-size: 0.875rem;
+  }
+
+  @include for-size(map.get($screens, md-2)) {
+    line-height: 182.05%;
+  }
 }
 
 .mentor__heading {
